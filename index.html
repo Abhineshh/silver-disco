@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Monk Productions</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="leftnav">
+            <ul class="menu" id="leftMenu">
+                <li>Portfolio</li>
+                <li>Information</li>
+            </ul>
+        </nav>
+        <div class="navimg">
+            <img src="./assets/a.jpg" height="100px" />
+        </div>
+        <nav class="rightnav">
+            <ul class="menu" id="rightMenu">
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <button class="burger-menu" onclick="toggleMenu()">☰</button>
+    </header>
+
+
+    <div>
+        here the banner
+    </div>
+
+    <div style="border: 2px solid green;" class="photographer">
+        <div class="imagep">
+            <img src="./assets/pro.png" height="100px" />
+        </div>
+        <div class="photo-desc">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam nemo neque ratione in?
+                Officia, accusamus asperiores? Cupiditate mollitia rerum laboriosam totam accusamus est, obcaecati a sit
+                alias architecto perspiciatis.</p>
+        </div>
+    </div>
+
+    <div>
+        <h2 style="text-align: center;">Portfolio</h2>
+        <div class="portfolio scrollable-div">
+            <div class="portfolio-card">
+                <img src="./assets/tt.png" height="60px" />
+                <div>
+                    <h4>lorem lorem lorem</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit fugit possimus consectetur
+                        sequi
+                        maiores error. Quam accusamus labore nihil, debitis minus at veritatis delectus temporibus
+                        minima
+                        nam harum aperiam nobis?</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="./assets/tt.png" height="60px" />
+                <div>
+                    <h4>lorem lorem lorem</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit fugit possimus consectetur
+                        sequi
+                        maiores error. Quam accusamus labore nihil, debitis minus at veritatis delectus temporibus
+                        minima
+                        nam harum aperiam nobis?</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <section>
+        <h2 style="text-align: center;">Contact Us</h2>
+        <form>
+            <div class="formline1">
+                <div>
+                    <label for="username">Your Name*</label>
+                    <input type="text" placeholder="Enter Your Name" name="username" pattern="[a-zA-Z]{4,}" />
+                </div>
+                <div>
+                    <label for="spousename">Spouse's Name</label>
+                    <input type="text" placeholder="Enter Your Spouse Name" name="spousename" pattern="[a-zA-Z]{4,}" />
+                </div>
+
+            </div>
+            <div>
+                <label for="phonenumber">Phone number*</label>
+                <input type="text" placeholder="Enter Your Phone Number" name="phonenumber" pattern="[0-9]{10,10}" />
+            </div>
+            <div>
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="email" placeholder="Enter Your Email" name="email"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" />
+                </div>
+                
+                <div>
+                    <label for="HowtheyKnow">How did you hear about us?
+                    </label>
+                    <select name="HowtheyKnow">
+                        <option value="none" selected disabled hidden>
+                            How did you hear about us?
+                        </option>
+                        <option value="instagram">Instagram</option>
+                        <option value="friends">friends</option>
+                        <option value="website">through this website</option>
+                        <option value="onlinesearch">Online Search</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                 <label for="whatservice">What service are you interested in?
+                    </label>
+                <select name="whatservice">
+                    <option value="none" selected disabled hidden>
+                        What service do you need?
+                    </option>
+                    <option value="wedding">Wedding Photography</option>
+                    <option value="product">Product Photography</option>
+                    <option value="newpurchase">Photography when you buy something</option>
+                    <option value="casual">Casual Photography</option>
+                    <option value="modelling">Modelling Photography</option>
+                </select>
+            </div>
+            <div>
+                <div>
+                    <label for='date'>Event Date</label>
+                    <input type="date" name="date" />
+                </div>
+                <div>
+                    <label for="venue">Event Venue</label>
+                    <input type="text" placeholder="Eg:Evergreen terrace springfield" />
+                </div>
+            </div>
+            <div>
+                <label for="tellmore">Tell me more!</label>
+                <textarea name="tellmore">Tell us more about the event and your ideas</textarea>
+            </div>
+            <div>
+                <button type="submit" onclick="submitInfo();">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        the footer goes here
+    </footer>
+
+</body>
+
+</html>
